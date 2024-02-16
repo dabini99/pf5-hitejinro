@@ -307,15 +307,15 @@
                 //$("aside").addClass("sliding");
                 if($(window).resize()>1200){
                     $("aside").addClass("sliding");
-                    $(this).next().show();
-                    $(this).parent().siblings().children(".listsub").hide();
-                    $(this).addClass("current");
-                    $(this).next().addClass("wide");
+                    $(this).next().find(".listsub").show();
+                    $(this).parent().siblings().find(".listsub").hide();
+                    $(this).addClass("current"); //노란표시
+                    $(this).next().find(".listsub").addClass("wide");
                     $(this).parent().siblings().children("h3").removeClass("current");
-                    $(this).parent().siblings().children(".listsub").hide().removeClass("wide");
+                    $(this).parent().siblings().find(".listsub").hide().removeClass("wide");
                 }
             });
-        //h3을 클릭사하면 실행하시오
+        //h3 a을 클릭사하면 실행하시오
             $("aside .wrap ul.list > li h3 a").click(function(){
                 //마우스 클릭한 요소 다음에 오는 것을 slideToggle하시오
                 $(this).parent().next().slideToggle();
@@ -324,14 +324,13 @@
             });
 
             $("aside").mouseleave(function(){
-                // $("aside").removeClass("sliding");
+                //$("aside").removeClass("sliding");
             });
 
         });
     </script>		
 </head>
 <body>
-    
     <!-- 상단영역 -->
    <header id="top">
         <div class="wrap">

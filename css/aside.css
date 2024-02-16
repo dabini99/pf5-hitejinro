@@ -144,7 +144,6 @@ aside .wrap ul.list > li ul.listsub.wide::before{
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
   animation-timing-function:ease-out;
-  a
 }
 @keyframes wide{
   100%{
