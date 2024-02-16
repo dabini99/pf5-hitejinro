@@ -304,8 +304,8 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $("aside .wrap ul.list > li h3").hover(function(){
-                //$("aside").addClass("sliding");
-                if($(window).resize()>1200){
+               // $("aside").addClass("sliding");
+                if($(window).width()>1200){
                     $("aside").addClass("sliding");
                     $(this).next().find(".listsub").show();
                     $(this).parent().siblings().find(".listsub").hide();
