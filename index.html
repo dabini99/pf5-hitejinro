@@ -224,7 +224,8 @@
             });  
         // 대메뉴오버시 서브를 슬라이드 다운
             var wsubN;
-            $("header .wrap nav ul.gnb li a").hover(function(){
+            $("header .wrap nav ul.gnb li a").hover(
+                function(){
                 $("header .wrap nav .wgnb").stop().slideDown();
                 //제이쿼리 slideDown()시 css속성에 transition이 있으면 제대로  펼쳐지지 않는다... 
                 //wsub를 보이게 하시오
@@ -234,8 +235,13 @@
             });     
             // 서브wgnb영역을 벗어나면 실행하시오(wgnb가 슬라이드업)
             $("header .wrap nav .wgnb").mouseleave(function(){
-                $(this).slideUp();
+                $(this).stop().slideUp();
             });
+            //h1요소에 마우스진입하면 (wgnb가 슬라이드업)
+            $("header .wrap nav h1").mouseenter(function(){
+                $("header .wrap nav .wgnb").stop().slideUp();
+            });
+
         // top버튼 클릭하면 실행하시오(문서를 애니메이트하시오)
             $("footer .btop").click(function(){
                 $("html,body").animate({scrollTop:0},1000);//문서스크롤 애니
