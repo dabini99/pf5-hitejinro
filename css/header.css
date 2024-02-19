@@ -115,7 +115,7 @@ header .wrap nav .wgnb{
   /*! transition:1s; */
   left: 0;
   top: 120px;
-  display: none;
+  /*! display: none; */
 }
 header .wrap nav .wgnb *{
   color:white;
@@ -235,7 +235,7 @@ header .wrap nav .wgnb ul.sub1>li>a{
   line-height: 2.5;
   padding-top: 20px;
 }
-header .wrap nav .wgnb ul.sub1>li>a::before{
+header .wrap nav .wgnb ul.sub1 > li>a::before{
   content: "";
   display: block;
   width: 20px;
