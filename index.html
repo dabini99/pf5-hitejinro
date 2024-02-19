@@ -224,7 +224,6 @@
             });
             console.log($("footer").offset());
         });
-
     </script> 
     <!-- slick -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -333,6 +332,10 @@
             });
             $("header .wrap nav .wgnb").mouseleave(function(){
                 $(this).stop().slideUp();
+            });
+            //top버튼을 클릭하면 실행하시오(문서를 애니메이트 하시오)
+            $("footer .btop").click(function(){
+                $("html,body").animate({scrollTop:0},1000);
             });
         });
     </script>		
