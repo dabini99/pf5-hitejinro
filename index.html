@@ -315,7 +315,7 @@
                     $(this).parent().siblings().find(".listsub").hide().removeClass("wide");
                 }
             });
-        //h3 a을 클릭사하면 실행하시오
+            //h3 a을 클릭사하면 실행하시오
             $("aside .wrap ul.list > li h3 a").click(function(){
                 //마우스 클릭한 요소 다음에 오는 것을 slideToggle하시오
                 $(this).parent().next().slideToggle();
@@ -327,6 +327,13 @@
                 $("aside").removeClass("sliding");
             });
 
+            //마우스를 올렸을 때 슬라이드 다운을 만들어줘라, 뗏을 때 슬라이드 업
+            $("header .wrap nav ul.gnb li a").hover(function(){
+                $("header .wrap nav .wgnb").stop().slideDown();
+            });
+            $("header .wrap nav .wgnb").mouseleave(function(){
+                $(this).stop().slideUp();
+            });
         });
     </script>		
 </head>
