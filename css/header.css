@@ -132,6 +132,7 @@ header .wrap nav .wgnb .center{
 }
 .wgnbShow{
    left: 0% !important;
+   display: block !important;
 }
 .close{
   display: block;
