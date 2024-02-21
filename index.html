@@ -185,7 +185,7 @@
                 $(this).toggleClass("currenH2");
                 $(this).parent().siblings().children("h2").removeClass("currenH2");
                 $(this).next().slideToggle();
-                $(this).parent().siblings().children("ul").slideUp();
+                $(this).parent().siblings().children("ul.sub1").slideUp();
             });
         
             var headerH=$("header").height();
@@ -349,7 +349,7 @@
                 $("aside").removeClass("sliding");
             });
             //brand를 클릭하면 실행하시오
-            $("header .wrap nav h2").click(function(){
+            $("header .wrap nav>h2").click(function(){
                 //aside에 클래스를 토글하시오
                 $("aside").toggleClass("asideSliding");
                 $("header .wrap nav .wgnb").removeClass("wgnbShow");
@@ -361,7 +361,7 @@
 <body>
     
     <!-- 상단영역 -->
-   <header id="top">
+    <header id="top">
         <div class="wrap">
             <nav>
                 <h1 class="h5">
