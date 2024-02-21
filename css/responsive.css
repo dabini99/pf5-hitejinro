@@ -51,6 +51,9 @@
     left: -80%;
     top:0;
     background-color: white;
+    padding-top: 20px !important;
+    transition: 1s;
+    display: block !important;
   }
   /* 추가0  */
   header .wrap nav .wgnb .wsub{
@@ -111,9 +114,11 @@
     display: block;
     line-height: 3;
   }
-  header .wrap nav .wgnb ul.sub1 > li > a{
-    
+  header .wrap nav .wgnb ul.sub1 > li > a{    
   color: #333;
+  }
+  header .wrap nav .wgnb ul.sub1 > li > a::before{    
+  content: initial;
   }
   header .wrap nav .wgnb ul li:not(:first-child) a{
     border-top:1px solid #ccc;
